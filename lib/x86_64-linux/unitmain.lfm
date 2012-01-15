@@ -1,0 +1,117 @@
+object FormMain: TFormMain
+  Left = 365
+  Height = 600
+  Top = 58
+  Width = 800
+  Caption = 'Lemniscates Explorer'
+  ClientHeight = 600
+  ClientWidth = 800
+  Menu = mainMenu
+  LCLVersion = '0.9.30'
+  object pnlMain: TPanel
+    Left = 596
+    Height = 600
+    Top = 0
+    Width = 204
+    Align = alRight
+    ClientHeight = 600
+    ClientWidth = 204
+    TabOrder = 1
+    TabStop = True
+    object boxLemniscates: TScrollBox
+      Left = 1
+      Height = 567
+      Top = 32
+      Width = 202
+      Align = alClient
+      TabOrder = 0
+    end
+    object pnlButtons: TPanel
+      Left = 1
+      Height = 31
+      Top = 1
+      Width = 202
+      Align = alTop
+      ClientHeight = 31
+      ClientWidth = 202
+      TabOrder = 1
+      object btnAdd: TButton
+        Left = 1
+        Height = 29
+        Top = 1
+        Width = 100
+        Align = alLeft
+        Caption = 'Add'
+        TabOrder = 0
+      end
+      object btnRemove: TButton
+        Left = 101
+        Height = 29
+        Top = 1
+        Width = 100
+        Align = alClient
+        Caption = 'Remove'
+        TabOrder = 1
+      end
+    end
+  end
+  object boxWorkspace: TScrollBox
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 596
+    Align = alClient
+    ClientHeight = 598
+    ClientWidth = 594
+    TabOrder = 0
+    object workspace: TImage
+      Left = 0
+      Height = 375
+      Top = 0
+      Width = 500
+    end
+  end
+  object mainMenu: TMainMenu
+    left = 576
+    top = 232
+    object miFile: TMenuItem
+      Caption = 'File'
+      object miNew: TMenuItem
+        Caption = 'New'
+      end
+      object miOpen: TMenuItem
+        Caption = 'Open'
+      end
+      object miSave: TMenuItem
+        Caption = 'Save'
+      end
+      object miSaveSreen: TMenuItem
+        Caption = 'Save sreenshot'
+      end
+      object miQuit: TMenuItem
+        Caption = 'Quit'
+      end
+    end
+    object miView: TMenuItem
+      Caption = 'View'
+      object miTransparent: TMenuItem
+        Caption = 'Transparent'
+      end
+    end
+    object miPicture: TMenuItem
+      Caption = 'Picture'
+      object miProperties: TMenuItem
+        Caption = 'Properties'
+      end
+    end
+    object miHelp: TMenuItem
+      Caption = 'Help'
+      object miAbout: TMenuItem
+        Caption = 'About'
+      end
+      object miHelpHelp: TMenuItem
+        Caption = 'Help'
+      end
+    end
+  end
+end

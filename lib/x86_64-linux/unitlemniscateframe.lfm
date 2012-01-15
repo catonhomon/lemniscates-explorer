@@ -1,0 +1,128 @@
+object Frame1: TFrame1
+  Left = 0
+  Height = 188
+  Top = 0
+  Width = 204
+  ClientHeight = 188
+  ClientWidth = 204
+  TabOrder = 0
+  DesignLeft = 725
+  DesignTop = 206
+  object Shape1: TShape
+    Left = 0
+    Height = 188
+    Top = 0
+    Width = 204
+    Align = alClient
+  end
+  object lblName: TLabel
+    Left = 8
+    Height = 19
+    Top = 7
+    Width = 49
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object lblRadius: TLabel
+    Left = 8
+    Height = 19
+    Top = 37
+    Width = 55
+    Caption = 'Radius:'
+    ParentColor = False
+  end
+  object lblThickness: TLabel
+    Left = 8
+    Height = 19
+    Top = 67
+    Width = 79
+    Caption = 'Thickness:'
+    ParentColor = False
+  end
+  object lblColor: TLabel
+    Left = 8
+    Height = 19
+    Top = 98
+    Width = 44
+    Caption = 'Color:'
+    ParentColor = False
+  end
+  object lblFocuses: TLabel
+    Left = 8
+    Height = 19
+    Top = 126
+    Width = 65
+    Caption = 'Focuses:'
+    ParentColor = False
+  end
+  object edtRadius: TFloatSpinEdit
+    Left = 96
+    Height = 28
+    Top = 34
+    Width = 104
+    Increment = 1
+    MaxValue = 1E20
+    MinValue = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    Value = 0
+  end
+  object edtName: TEdit
+    Left = 96
+    Height = 28
+    Top = 4
+    Width = 104
+    TabOrder = 1
+    Text = 'Name'
+  end
+  object edtFocuses: TEdit
+    Left = 96
+    Height = 28
+    Top = 123
+    Width = 104
+    ReadOnly = True
+    TabOrder = 2
+    Text = '0'
+  end
+  object FloatSpinEdit2: TFloatSpinEdit
+    Left = 96
+    Height = 28
+    Top = 64
+    Width = 104
+    Increment = 1
+    MaxValue = 1E20
+    MinValue = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    Value = 0
+  end
+  object btnColor: TColorButton
+    Left = 96
+    Height = 23
+    Top = 95
+    Width = 104
+    BorderWidth = 2
+    ButtonColorSize = 16
+    ButtonColor = clBlack
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object btnAdd: TButton
+    Left = 8
+    Height = 25
+    Top = 157
+    Width = 90
+    Caption = 'Add'
+    TabOrder = 4
+  end
+  object btnRemove: TButton
+    Left = 104
+    Height = 25
+    Top = 157
+    Width = 90
+    Caption = 'Remove'
+    TabOrder = 5
+  end
+end
